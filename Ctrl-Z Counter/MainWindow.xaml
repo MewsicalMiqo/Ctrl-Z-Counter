@@ -1,0 +1,19 @@
+﻿<Window x:Class="Ctrl_Z_Counter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ctrl_Z_Counter"
+        mc:Ignorable="d"
+        Title="Ctrl-Z Counter" Height="181.25" Width="324.519" Loaded="Window_Loaded" Closing="Window_Closing">
+    <Grid Margin="0,0,0.4,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="41*"/>
+            <ColumnDefinition Width="118*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnReset" Content="Reset" HorizontalAlignment="Left" Margin="16,104,0,0" VerticalAlignment="Top" Width="92" Click="btnReset_Click" Grid.ColumnSpan="2" Height="27"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="16,53,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" IsReadOnly="True" Grid.ColumnSpan="2"/>
+        <Label x:Name="lblCount" Content="Count:" HorizontalAlignment="Left" Margin="16,10,0,0" VerticalAlignment="Top" Width="61"/>
+
+    </Grid>
+</Window>
