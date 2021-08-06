@@ -67,6 +67,7 @@ namespace Ctrl_Z_Counter
         private void btnReset_Click(object sender, RoutedEventArgs e)
         {
             count = 0;
+            textBox.Text = count.ToString();
             WriteToFile();
         }
 
